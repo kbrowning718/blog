@@ -1,3 +1,94 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  padding: 25px;
+}
+
+p {
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 1.7em;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: 500;
+}
+
+.strong {
+  font-weight: 500;
+}
+
+.show {
+  display: block;
+}
+
+.show-flex {
+  display: flex;
+}
+
+.hide {
+  display: none;
+}
+
 .main-header-container {
-  border:1px solid;
+height: 85px;
+display: flex;
+justify-content: space-between;
+width: 100%;
+border: 1px solid;
+align-items: center;
+}
+
+.mobilenav-logo-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 25px;
+}
+
+.fas.fa-bars {
+  font-size: 1.7em;
+  margin-right: 15px;
+
+}
+
+.fas.fa-cubes {
+  font-size: 1.5em;
+  color: #387887;
+  margin-right: 5px;
+}
+
+.company-name {
+ font-family: 'Gruppo';
+ font-size: 1.7em;
+}
+
+.navigation-container {
+  height: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 100%;
+  margin: 0px 25px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  margin: 0px 4%;
+  font-size: 1em;
 }
