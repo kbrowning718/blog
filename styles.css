@@ -167,6 +167,7 @@ height: 300px;
   max-width: 70%;
   margin: 0 auto;
   border: 1px solid green;
+  height: auto;
 }
 
 .main-blog-content-wrapper {
@@ -423,6 +424,8 @@ i:hover {
 
   .body-sidebar-wrapper {
     flex-direction: column;
+    display: flex;
+
   }
 
   .main-blog-content-wrapper {
