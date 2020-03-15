@@ -163,13 +163,12 @@ height: 300px;
 .body-sidebar-wrapper {
   display:flex;
   max-width: 70%;
-  height: 100%;
   border: 1px solid green;
 
 }
 
 .main-blog-content-wrapper {
-  max-width:60%;
+  width: 100%;
   padding: 10px 25px;
   border: 1px solid red;
 }
@@ -431,10 +430,10 @@ i:hover {
   }
 
   .main-blog-content-wrapper {
-    max-width: 100%;
+    max-width: 85%;
     display: flex;
     flex-direction:column;
-    height: 100%;
+    margin: auto;
   }
 
   .sidebar-menu-wrapper {
@@ -539,6 +538,7 @@ margin-bottom:0px;
   .author-img-container {
     width: 100%;
     margin: 10px auto;
+    height: 10%;
   }
 
   .author-bio-container {
