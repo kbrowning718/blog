@@ -1,7 +1,18 @@
 body {
   font-family: 'Quicksand', sans-serif;
 margin: 0px;
+height: 100%;
+width: 100%;
 }
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 
 input {
     font-family: 'Quicksand', sans-serif;
@@ -15,6 +26,7 @@ a {
   font-size: 13px;
   font-weight: 400;
   text-decoration: none;
+  color: #333;
 
 }
 
@@ -31,6 +43,7 @@ font-weight: 800;
 
 p {
   font-weight: 500;
+  letter-spacing: .02em;
 }
 
 .text-indent {
@@ -252,11 +265,16 @@ color: #6b6b6b;
 .recent-post-container {
   height: 100%;
   padding: 10px;
+  transition: all 2s ease;
 }
 
 .recent-post-header {
   display: flex;
   align-items: center;
+}
+
+.recent-post-h3 {
+  margin-top: 0px;
 }
 
 .fas.fa-long-arrow-alt-right {
@@ -315,7 +333,7 @@ margin: 10px;
   font-weight: 600;
   font-size: 12px;
   color: #a6a6a6;
-  margin-left: 35px;
+  margin-left: 30px;
   margin-top: 0px;
   margin-bottom: 25px;
   font-style: italic;
@@ -326,11 +344,13 @@ margin: 10px;
   border-top: 1px solid #f6f6f6;
   height: 100%;
   margin-top: 25px;
+  width: 100%;
+
 }
 
 .author-container{
   display:flex;
-  max-height: 150px;
+  max-height: 110px;
   padding: 10px;
 
 }
@@ -350,6 +370,14 @@ margin: 10px;
   max-width: 75%;
 }
 
+.author-bio-container > h4 {
+  margin-top: 10px;
+}
+
+.author-bio-container > p {
+  margin-top: 5px;
+}
+
 .social-container {
 border-top: 1px solid #f6f6f6;
   display: flex;
@@ -359,10 +387,65 @@ border-top: 1px solid #f6f6f6;
 }
 
 .social-container > i {
-  margin: 10px;
-  font-size: 1.5em;
+  margin: 15px;
+  font-size: 1.3em;
 }
 
 i:hover {
   color: #a6a6a6;
+}
+
+.load-more {
+  display: none;
+}
+
+@media only screen and (max-width:1199px) {
+
+
+  .body-sidebar-wrapper {
+    flex-direction: column;
+  }
+
+  .main-blog-content-wrapper {
+    max-width: 100%;
+  }
+
+  .sidebar-menu-wrapper {
+    margin: 0 auto;
+    width: 90%;
+  }
+
+.search-bar-container {
+  margin: 10px 30px;
+}
+
+
+
+  .load-more-container {
+  display: flex;
+  justify-content: center;
+
+  }
+
+  .load-more {
+    font-size: 18px;
+    display: block;
+  }
+
+  .load-more:hover {
+    color: #a6a6a6;
+  }
+
+  .load-more:hover .fas.fa-spinner {
+    transform: rotate(1200deg);
+    transition: all 3s ease;
+  }
+
+
+  .fas.fa-spinner, .fas.fa-angle-up {
+    margin: 10px;
+    font-size: 18px;
+    color: #a6a6a6;
+  }
+
 }
