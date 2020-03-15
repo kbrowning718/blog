@@ -264,7 +264,7 @@ color: #6b6b6b;
 }
 
 .recent-post-container {
-  height: 100%;
+  max-height:100%;
   padding: 10px;
   transition: all 2s ease;
 }
@@ -285,7 +285,7 @@ margin: 10px;
 
 .recent-post {
   border-bottom: 2px solid #f6f6f6;
-  height: 100%;
+max-height: 200px;
   padding: 15px;
   width: 80%;
   margin: 0 auto;
@@ -423,13 +423,13 @@ i:hover {
 
   .body-sidebar-wrapper {
     flex-direction: column;
+    height: 100%;
   }
 
   .main-blog-content-wrapper {
     max-width: 100%;
     display: flex;
     flex-direction:column;
-    height: 100%;
   }
 
   .sidebar-menu-wrapper {
