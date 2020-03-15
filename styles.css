@@ -171,6 +171,7 @@ height: 300px;
 .main-blog-content-wrapper {
   max-width:60%;
   padding: 10px 25px;
+  height: 100%;
   border: 1px solid red;
 }
 
@@ -427,6 +428,7 @@ i:hover {
     flex-direction: column;
     display: flex;
 
+
   }
 
   .main-blog-content-wrapper {
@@ -439,6 +441,7 @@ i:hover {
   .sidebar-menu-wrapper {
     margin: 0 auto;
     width: 90%;
+    height: 100%;
   }
 
 .search-bar-container {
@@ -482,6 +485,10 @@ i:hover {
     max-width: 100%;
     height: 250px;
     transition: all 1s ease;
+  }
+
+  .subtitle-container {
+    font-size: .6em;
   }
 
   .body-sidebar-wrapper {
