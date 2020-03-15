@@ -118,6 +118,7 @@ box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
 .fas.fa-bars {
   font-size: 1.7em;
   margin-right: 15px;
+  display: none;
 
 }
 
@@ -150,9 +151,9 @@ box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
 }
 
 .blog-image-container {
-height: 400px;
+height: 300px;
   max-width: 75%;
-  margin: 100px auto 0px auto;
+  margin: 50px auto 0px auto;
 }
 
 .blog-image {
@@ -183,9 +184,9 @@ height: 400px;
 
 .img-wrap-left-wrapper, .img-wrap-right-wrapper {
   display: flex;
-  max-height: 250px;
+  max-height: 350px;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .img-wrap-left-container, .img-wrap-right-container {
@@ -343,20 +344,21 @@ margin: 10px;
 .blog-footer {
   border-top: 1px solid #f6f6f6;
   height: 100%;
-  margin-top: 25px;
+  margin-top: 45px;
   width: 100%;
 
 }
 
 .author-container{
   display:flex;
-  max-height: 110px;
-  padding: 10px;
+height: 100px;
+  padding: 25px;
 
 }
 
 .author-img-container {
-  max-width:20%;
+  max-width:30%;
+  height: 100%;
   margin: 10px;
 }
 
@@ -368,6 +370,7 @@ margin: 10px;
 
 .author-bio-container {
   max-width: 75%;
+  height: 100%;
 }
 
 .author-bio-container > h4 {
@@ -401,6 +404,20 @@ i:hover {
 
 @media only screen and (max-width:1199px) {
 
+  .mobilenav-logo-container {
+    width: 100%;
+    margin: 0px 20px;
+
+}
+
+  .navigation-container {
+    display: none;
+  }
+
+  .fas.fa-bars {
+    display: block;
+    font-size: 2em;
+  }
 
   .body-sidebar-wrapper {
     flex-direction: column;
@@ -447,5 +464,50 @@ i:hover {
     font-size: 18px;
     color: #a6a6a6;
   }
+
+}
+
+@media only screen and (max-width: 800px) {
+  .blog-image-container {
+    margin: 15px auto 0px auto;
+    max-width: 100%;
+    height: 250px;
+    transition: all 1s ease;
+  }
+
+  .body-sidebar-wrapper {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width:767px) {
+
+.img-wrap-left-wrapper {
+flex-direction: column;
+width: unset;
+max-height: unset;
+margin-bottom:0px;
+}
+
+.img-wrap-right-wrapper  {
+
+  flex-direction: column-reverse;
+  width: unset;
+  max-height: unset;
+  margin-bottom:0px;
+}
+
+.img-wrap-left-container, .img-wrap-right-container {
+  width: 100%;
+}
+
+.img-wrap-left, .img-wrap-right {
+  height: 270px;
+  width: 95%;
+}
+
+.img-wrap-left-text-wrapper, .img-wrap-right-text-wrapper {
+  width: 100%;
+}
 
 }

@@ -14,12 +14,6 @@ var deviceL = window.matchMedia("(max-width:1199px)");
 var mobileNav = document.getElementById('hamburger-nav');
 var logo = document.getElementById('logo-container');
 var navLinkContainer = document.getElementById('nav-link-container');
-
-if(deviceL.matches) {
-  logo.classList.add('hide');
-}
-
-
 var loadMore = document.getElementById('load-more');
 var recentPost = document.getElementsByClassName('recent-post');
 
