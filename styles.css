@@ -170,7 +170,6 @@ height: 300px;
 .main-blog-content-wrapper {
   max-width:60%;
   padding: 10px 25px;
-  max-height: 100%;
   border: 1px solid red;
 }
 
