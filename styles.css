@@ -7,11 +7,24 @@ input {
     font-family: 'Quicksand', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+color: #a6a6a6;
+}
+
+.strong {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
 p {
   font-weight: 500;
 }
 
-h1, h2, h3, h4, h5 {
+.text-indent {
     text-indent: 15px;
 }
 
@@ -26,18 +39,14 @@ h2 {
 }
 
 h3 {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 600;
   margin-bottom: 0px;
 }
 
 h4 {
   font-size: 1em;
-  font-weight: 500;
-}
-
-.strong {
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .show {
@@ -98,7 +107,7 @@ align-items: center;
   text-decoration: none;
   color: #333;
   margin: 0px 4%;
-  font-size: 1em;
+  font-size: 1.3em;
 }
 
 .blog-image-container {
@@ -115,7 +124,7 @@ align-items: center;
 
 .body-sidebar-wrapper {
   display:flex;
-  max-width: 80%;
+  max-width: 60%;
   margin: 0 auto;
   border: 1px solid green;
 }
@@ -128,17 +137,19 @@ align-items: center;
 
 .blog-content {
   border: 1px solid pink;
-  height: 100%;
+  max-height: 100%;
   width:100%;
-
 }
 .img-wrap-left-wrapper {
   display: flex;
+  max-height: 250px;
+  width: 100%;
 }
 
 .img-wrap-left-container {
-  max-width:40%;
+  width:30%;
   margin: 15px;
+
 }
 
 .img-wrap-left {
@@ -148,7 +159,7 @@ align-items: center;
 }
 
 .img-wrap-left-text-wrapper {
-  width: 85%;
+  width: 70%;
 }
 
 
@@ -173,7 +184,7 @@ align-items: center;
 }
 
 .sidebar-menu-wrapper {
-  width: 40%;
+  width: 30%;
   height: 100%;
   border: 1px solid blue;
   padding: 25px 10px;
@@ -207,5 +218,67 @@ input:focus{
 .search-icon-container {
   font-size: 1.3em;
 color: #6b6b6b;
+
+}
+
+.recent-post-container {
+  height: 100%;
+  padding: 10px;
+}
+
+.recent-post-header {
+  display: flex;
+  align-items: center;
+}
+
+.fas.fa-long-arrow-alt-right {
+color: #FFD700;
+margin: 10px;
+}
+
+.recent-post {
+  border-bottom: 2px solid #f6f6f6;
+  height: 150px;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.read-more-container {
+  display: flex;
+  align-items: center;
+}
+
+.fab.fa-first-order {
+  margin: 10px;
+  color: #FFD700;
+}
+
+.pullquote-wrapper {
+  width: 100%;
+  max-height: 150px;
+  display: flex;
+  align-items: left;
+  flex-direction:column;
+  background-color: #f6f6f6;
+  box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
+}
+
+.pullquote-text {
+  margin: 0 auto;
+  padding: 30px;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+.pullquote-source {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  color: #a6a6a6;
+  margin-left: 35px;
+  margin-top: 0px;
+  font-style: italic;
 
 }
