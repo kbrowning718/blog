@@ -31,7 +31,6 @@ font-weight: 800;
 
 p {
   font-weight: 500;
-  margin: 0px;
 }
 
 .text-indent {
@@ -40,7 +39,7 @@ p {
 
 h1, h2, h3, h4, h5 {
   margin-bottom: 0px;
-  margin-top: 10px;
+  margin-top: 35px;
 }
 
 h1 {
@@ -352,10 +351,11 @@ margin: 10px;
 }
 
 .social-container {
-  border: 1px solid;
+border-top: 1px solid #f6f6f6;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px;
 }
 
 .social-container > i {
