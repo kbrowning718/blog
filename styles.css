@@ -168,9 +168,9 @@ height: 300px;
 }
 
 .main-blog-content-wrapper {
-  width: 100%;
   padding: 10px 25px;
   border: 1px solid red;
+  height: 100%;
 }
 
 .blog-content {
