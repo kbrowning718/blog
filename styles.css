@@ -369,12 +369,13 @@ max-height: 200px;
   border: 1px solid green;
   width: 100%;
   justify-content: center;
+  align-items: center;
 }
 
 
 .author-img-container {
   width: 100px;
-  margin: 10px 30px;
+  margin: 15px;
   height: 100%;
 }
 
@@ -512,6 +513,11 @@ i:hover {
 
 @media only screen and (max-width:767px) {
 
+  .sidebar-menu-wrapper {
+    max-width: 100%;
+  }
+
+
   .top-content-wrapper {
    height: auto;
   }
@@ -549,6 +555,10 @@ margin-bottom:0px;
   width: 100%;
 }
 
+.author-bio-container {
+  font-size: 1em;
+}
+
 .author-img-container {
   max-width:20%;
 }
@@ -557,11 +567,7 @@ margin-bottom:0px;
 
 @media only screen and (max-width:576px) {
 
-  .sidebar-menu-wrapper {
-    width: 100%;
-  }
-
-  .author-container {
+  .author-bio-wrapper {
     flex-direction: column;
   }
 
