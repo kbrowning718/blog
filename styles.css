@@ -580,9 +580,3 @@ i:hover {
     text-align: center;
   }
 }
-
-@media only screen and (max-height:414px) {
-  .author-bio-wrapper {
-  max-height: 150px;
-}
-}
