@@ -168,8 +168,8 @@ box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
 
 .main-content-wrapper {
   border: 1px solid purple;
-  height: 100%;
   margin-bottom: 25px;
+  display: block;
 }
 
 .main-blog-content-wrapper {
@@ -362,8 +362,7 @@ max-height: 200px;
 .blog-footer {
   border: 1px solid #333;
   margin-top: 30px;
-  height: 100%;
-  margin-bottom: 300px;
+  margin-bottom: 50px;
 
 }
 
