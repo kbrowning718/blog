@@ -245,7 +245,7 @@ max-width: 75%;
 .search-bar-container {
   display: flex;
   justify-content: space-between;
-  height: 25px;
+  height: 30px;
   border: 1px solid #6b6b6b;
   align-items: center;
   padding: 10px;
@@ -254,9 +254,8 @@ max-width: 75%;
 }
 
 #search {
-  height: 100%;
   border: 1px solid;
-  font-size: 1.3em;
+  font-size: 1em;
   background-color: #fff;
   border: none;
 }
@@ -270,7 +269,7 @@ input:focus{
   }
 
 .search-icon-container {
-  font-size: 1.3em;
+  font-size: 1em;
 color: #6b6b6b;
 
 }
