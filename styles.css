@@ -179,14 +179,14 @@ box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
 
 }
 
-.main-blog-content-wrapper {
+/*.main-blog-content-wrapper {
 max-width: 75%;
   margin: 0 auto;
   border: 1px solid red;
   max-height: 100%;
   margin-bottom: 30px;
   height: 100%;
-}
+}*/
 
 .blog-content {
   max-height: 100%;
