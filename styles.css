@@ -148,10 +148,16 @@ box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
   text-transform: uppercase;
 }
 
+.top-content-wrapper {
+  margin-top: 30px;
+  border: 1px solid;
+  height: 350px;
+}
+
 .blog-image-container {
-height: 300px;
   max-width: 75%;
-  margin: 50px auto 0px auto;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .blog-image {
@@ -160,17 +166,25 @@ height: 300px;
   object-fit: cover;
 }
 
+.main-content-wrapper {
+  border: 1px solid purple;
+  height: 100%;
+  margin-bottom: 100px;
+}
+
 .body-sidebar-wrapper {
   display:flex;
-  max-width: 70%;
+  height: 100%;
   border: 1px solid green;
 
 }
 
 .main-blog-content-wrapper {
-  padding: 10px 25px;
+max-width: 75%;
+  margin: 0 auto;
   border: 1px solid red;
-  height: 100%;
+  max-height: 100%;
+  margin-bottom: 30px;
 }
 
 .blog-content {
@@ -187,9 +201,11 @@ height: 300px;
   margin-bottom: 20px;
 }
 
-.img-wrap-left-container, .img-wrap-right-container {
-  width:40%;
+.img-wrap-left-container {
+  height: 200px;
+  max-width: 25%;
   margin: 15px;
+  float: left;
 }
 
 .img-wrap-left, .img-wrap-right {
@@ -204,7 +220,7 @@ height: 300px;
 
 
 .subtitle-container {
-  padding: 10px 0px 0px 0px;
+  padding: 10px;
   font-size: .9em;
   display: flex;
   align-items: center;
@@ -314,25 +330,36 @@ max-height: 200px;
   max-height: 450px;
   display: flex;
   margin: 25px auto;
-  align-items: left;
-  flex-direction:column;
+  flex-direction: column;
   background-color: #f6f6f6;
   box-shadow: 1px 3px 11px -4px rgba(51,51,3,0.31);
-  padding: 30px;
+  padding: 30px 50px;
+  align-items: center;
 }
 
+.pullquote-text-container {
+  display: flex;
+  align-items: center;
+}
+
+
 .pullquote-text {
-  margin: 0 auto;
   color: #9a9a9a;
   padding: 10px 0px;
-  font-size: 1.3em;
+  font-size: 1.5em;
   font-style: italic;
+  margin: 0px 20px;
+}
+
+.fas.fa-quote-right, .fas.fa-quote-left {
+  opacity: .3;
+  font-size: 1em;
 }
 
 .pullquote-source {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: .8em;
+  font-size: 1em;
   color: #a6a6a6;
   font-style: italic;
 
@@ -495,6 +522,10 @@ i:hover {
 
 @media only screen and (max-width:767px) {
 
+  .top-content-wrapper {
+   height: auto;
+  }
+
   .pullquote-wrapper {
     width: unset;
     margin: 25px 0px;
@@ -535,6 +566,7 @@ margin-bottom:0px;
 }
 
 @media only screen and (max-width:576px) {
+
   .author-container {
     flex-direction: column;
   }
