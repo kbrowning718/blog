@@ -11,31 +11,16 @@ if(window.scrollY >= 110) {
 });
 
 var deviceL = window.matchMedia("(max-width:1199px)");
+var deviceM = window.matchMedia("(min-width:992px)");
+var deviceS = window.matchMedia("(max-width:767px)");
+var sidebarD = document.getElementById('sidebar-desktop');
 var mobileNav = document.getElementById('hamburger-nav');
 var logo = document.getElementById('logo-container');
 var navLinkContainer = document.getElementById('nav-link-container');
 var loadMore = document.getElementById('load-more');
 var recentPost = document.getElementsByClassName('recent-post');
 
-if(deviceL.matches) {
-
-  for(var i = 0; i < recentPost.length; i++) {
-    recentPost[i].classList.add('hide');
-    recentPost[0].classList.remove('hide');
-    recentPost[1].classList.remove('hide');
-  }
-
-loadMore.addEventListener("click", function (e) {
-   loadMore.classList.toggle('show-less');
-  for(var j = 0; j < recentPost.length; j++) {
-recentPost[j].classList.toggle('hide');
-}
-
-if(loadMore.classList.contains('show-less')) {
-  loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
-} else {
-  loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";
-}
-});
-
+if(deviceM.matches) {
+  sidebarD.innerHTML =
+  "<div class='sidebar-menu-wrapper-desktop'><div class='search-bar-container'><input type='text' id='search' name='search' placeholder='Search'><div class='search-icon-container'><label class='search-icon' for='search'><i class='fas fa-search'></i></label></div></div><div class='recent-post-header'><i class='fas fa-long-arrow-alt-right'></i> <p class='subtitle-headline strong'>Recent Posts</p></div><div class='recent-post'><h4 class='recent-post-h4'>Recent Post Header Goes Here: A Tale of Lorem Ipsum</h4><p>Thoncus dolor purus non enim praesent. Risus at ultrices.</p><div class='read-more-container'><a href='#'>READ MORE</a><i class='fab fa-first-order'></i></div></div>"
 }
