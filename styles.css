@@ -581,3 +581,15 @@ i:hover {
     text-align: center;
   }
 }
+
+@media only screen and (max-height: 415px) {
+  .author-img-container {
+    height: 100px;
+    width: 100px;
+  }
+
+  .author-img {
+    width: 100px;
+    height: 100px;
+  }
+}
