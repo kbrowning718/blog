@@ -19,6 +19,7 @@ input {
 
 .inline-links {
   font-weight: 600;
+  font-size: 1em;
 }
 
 a {
@@ -215,8 +216,8 @@ max-width: 75%;
 
 
 .subtitle-container {
-  padding: 10px;
-  font-size: .9em;
+  padding: 10px 0px;
+  font-size: 1em;
   display: flex;
   align-items: center;
   text-transform:uppercase;
@@ -232,6 +233,7 @@ max-width: 75%;
   line-height: 1.3em;
   text-indent: 35px;
   padding: 0px 5px;
+  font-size: 1em;
 }
 
 .sidebar-menu-wrapper {
@@ -502,7 +504,7 @@ i:hover {
   }
 
   .subtitle-container {
-    font-size: .6em;
+    font-size: .8em;
   }
 
   .body-sidebar-wrapper {
@@ -559,7 +561,7 @@ i:hover {
   }
 
   .pullquote-wrapper {
-    padding: 20px;
+    padding: 15px;
   }
 
   .pullquote-source {
