@@ -50,12 +50,11 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  margin-bottom: 0px;
-  margin-top: 35px;
+margin: 0;
 }
 
 h1 {
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 500;
 }
 
@@ -65,7 +64,7 @@ h2 {
 }
 
 h3 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   font-weight: 600;
   margin-bottom: 0px;
   text-transform: uppercase;
@@ -337,7 +336,7 @@ max-height: 200px;
 .pullquote-text {
   color: #9a9a9a;
   padding: 10px 0px;
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-style: italic;
   margin: 0px 20px;
 }
@@ -557,6 +556,14 @@ i:hover {
 
   #search {
     width: 80%;
+  }
+
+  .pullquote-wrapper {
+    padding: 20px;
+  }
+
+  .pullquote-source {
+    font-size: .9em;
   }
 
   .img-wrap-left-container, .img-wrap-right-container {
