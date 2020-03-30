@@ -24,22 +24,23 @@ if(deviceM.matches) {
 }
 
 var loadMore = document.getElementById('load-more');
-var loadIcon = document.getElementById('spinner');
+
   loadMore.addEventListener('click', function (e) {
-    loadMore.classList.toggle('show-less');
       loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
+    loadMore.classList.toggle('show-less');
+
 
     var recentPost = document.getElementsByClassName('recent-post');
 
     for(i = 0; i < recentPost.length; i++) {
 
     if(loadMore.classList.contains('show-less')) {
-      loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";
+      loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
 
       recentPost[2].classList.remove('hide');
       recentPost[3].classList.remove('hide');
 } else {
-    loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
+    loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";  
     recentPost[2].classList.add('hide');
     recentPost[3].classList.add('hide');
 
