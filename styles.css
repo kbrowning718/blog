@@ -8,19 +8,6 @@ height: 100%;
   display: none;
 }
 
-.hide-height {
-  height: 0
-}
-
-.hide-opacity {
-  opacity: 0;
-}
-
-.show-opacity {
-  opacity: 1;
-  transition: opacity 2s ease;
-}
-
 .show {
   display: block;
 }
@@ -313,7 +300,6 @@ max-height: 200px;
   padding: 15px;
   width: 80%;
   margin: 0 auto;
-  transition: opacity 2s ease;
 }
 
 
@@ -556,7 +542,6 @@ justify-content: center;
 
 @media only screen and (max-width: 800px) {
   .blog-image-container {
-    margin: 15px auto 0px auto;
     max-width: 100%;
     height: 250px;
     transition: all 1s ease;
