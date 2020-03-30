@@ -27,6 +27,7 @@ var loadMore = document.getElementById('load-more');
 var loadIcon = document.getElementById('spinner');
   loadMore.addEventListener('click', function (e) {
     loadMore.classList.toggle('show-less');
+      loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
 
     var recentPost = document.getElementsByClassName('recent-post');
 
