@@ -36,11 +36,10 @@ var loadMore = document.getElementById('load-more');
 
     if(loadMore.classList.contains('show-less')) {
       loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
-
       recentPost[2].classList.remove('hide');
       recentPost[3].classList.remove('hide');
 } else {
-    loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";  
+    loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";
     recentPost[2].classList.add('hide');
     recentPost[3].classList.add('hide');
 
