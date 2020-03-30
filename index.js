@@ -31,19 +31,18 @@ var loadIcon = document.getElementById('spinner');
     var recentPost = document.getElementsByClassName('recent-post');
 
     for(i = 0; i < recentPost.length; i++) {
-      if(recentPost[i].classList.contains('hide')) {
-        recentPost[i].classList.remove('hide');
-  }
-}
 
     if(loadMore.classList.contains('show-less')) {
       loadMore.innerHTML = "LOAD MORE <i class='fas fa-spinner'>";
 
-      recentPost[2].classList.add('hide');
-      recentPost[3].classList.add('hide');
+      recentPost[2].classList.remove('hide');
+      recentPost[3].classList.remove('hide');
 } else {
     loadMore.innerHTML = "SHOW LESS <i class='fas fa-angle-up'></i>";
+    recentPost[2].classList.add('hide');
+    recentPost[3].classList.add('hide');
 
+}
 }
 
       });
