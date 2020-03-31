@@ -4,7 +4,10 @@ var mobileNavMenu = document.getElementById('mobile-nav-menu');
 window.addEventListener('scroll', function(e) {
   mainHeader.classList.add('default-header');
   mainHeader.classList.remove('sticky');
-  mobileNavMenu.classList.add('left');
+
+  if(window.scrollY >= 150) {
+    mobileNavMenu.classList.add('left');
+  }
 
 
 if(window.scrollY >= 500) {
@@ -27,11 +30,9 @@ var mobileNav = document.getElementById('hamburger-nav');
 var navLinkContainer = document.getElementById('nav-link-container');
 var recentPost = document.getElementsByClassName('recent-post');
 
-if(deviceL.matches) {
   mobileNav.addEventListener('click', function (e) {
     mobileNavMenu.classList.toggle('left');
   });
-}
 
 if(deviceM.matches) {
   sidebarD.innerHTML =
