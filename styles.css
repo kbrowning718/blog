@@ -801,7 +801,7 @@ justify-content: center;
   .mobile-nav-link-container {
     height: 65%;
     padding: 10px;
-    margin: 200px 25px 25px 25px;
+    margin: 25px;
   }
 
   .mobile-links-wrapper > a  {
